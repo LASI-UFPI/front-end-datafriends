@@ -1,0 +1,16 @@
+body {
+  background: #311c69;
+}
+
+.formulario {
+  margin: 0 auto;
+  width: 70%;
+  height: 100vh;
+  background: #ffef65;
+}
+
+.cabeçalho{
+  width: 100%;
+  height: 200px;
+  background: #f8e71d;
+}
