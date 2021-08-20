@@ -21,17 +21,17 @@
     <main>
       <form class="py-5 px-5 row g-3" action="" method="post">
         <h3 class="text-center">I-IDENTIFICAÇÃO DO(A) ATENDIDO(A) DIAGNÓSTICOS </h3>
-        
+
         <div class="col-md-6">
           <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" placeholder="Digite o nome">        
+          <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
         </div>
-        
+
         <div class="col-md-6">
           <label for="Ingresso_ama" class="form-label">Ingresso na AMA</label>
           <input type="date" class="form-control" id="ingresso_ama">
         </div>
-        
+
         <div class="col-md-4">
           <label for="nascimento" class="form-label">Data de Nascimento</label>
           <input type="date" class="form-control" id="nascimento">
@@ -41,7 +41,7 @@
           <label for="Idade" class="form-label">Idade</label>
           <input type="text" class="form-control" id="Idade" placeholder="Digite a Idade">
         </div>
-        
+
         <div class="col-md-4">
           <label for="sexo" class="form-label">Sexo</label>
           <select id="sexo" class="form-control">
@@ -56,17 +56,17 @@
           <label for="cpf" class="form-label">CPF</label>
           <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF">
         </div>
-        
+
         <div class="col-md-4">
           <label for="rg" class="form-label">RG</label>
           <input type="text" class="form-control" id="rg" placeholder="Digite o RG">
         </div>
-        
+
         <div class="col-md-4">
           <label for="sus" class="form-label">Número do SUS</label>
           <input type="text" class="form-control" id="sus" placeholder="Digite o Numero do SUS">
         </div>
-        
+
         <div class="col-md-6">
           <label for="cid" class="form-label">CID</label>
           <input type="text" class="form-control" id="cid" placeholder="Digite o CID">
@@ -76,11 +76,49 @@
           <label for="ultimo_diagnostico" class="form-label">Último Diagnóstico</label>
           <input type="date" class="form-control" id="ultimo_diagnostico" class="form-label">
         </div>
-        
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
 
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-12 pt-3">Possui alguma doença crônica não transmissível?</legend>
+          
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="doenca_cronica" id="tem_doenca_cronica" value="sim">
+              <label class="form-check-label" for="tem_doenca_cronica">Sim</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="doenca_cronica" id="nao_tem_doenca_cronica"
+                value="nao">
+              <label class="form-check-label" for="nao_tem_doenca_cronica">Não</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="row mb-3">
+          <div class="col-md-3">
+            <legend class="col-form-label col-12 pt-0">Usa medicação?</legend>
+            <div class="col-12">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="remedio" id="tem_medicação" value="sim">
+                <label class="form-check-label" for="tem_medicação">Sim</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="remedio" id="nao_tem_medicação"value="nao">
+                <label class="form-check-label" for="nao_tem_medicação">Não</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <label for="qual" class="form-label">Qual(is)?</label>
+            <input type="text" class="form-control" id="qual">
+          </div>
+
+        </fieldset>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-danger">Confirmar</button>
+        </div>
       </form>
     </main>
   </div>
