@@ -17,16 +17,16 @@
       <img src="ama.png" class="rounded-0" alt="Logo da AMA">
       <h1>Ficha de Matrícula</h1>
     </header>
-
+    
     <main>
       <form class="py-5 px-5 row g-3" action="" method="post">
         <h3 class="text-center">I-IDENTIFICAÇÃO DO(A) ATENDIDO(A) DIAGNÓSTICOS </h3>
-
+        <!-- Bloco para o nome -->
         <div class="col-md-6">
           <label for="nome" class="form-label">Nome</label>
           <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
         </div>
-
+        <!-- Bloco para o Ingresso na AMA -->
         <div class="col-md-6">
           <label for="Ingresso_ama" class="form-label">Ingresso na AMA</label>
           <input type="date" class="form-control" id="ingresso_ama">
@@ -116,9 +116,17 @@
 
         </fieldset>
 
-        <div class="col-12">
+        <!-- Parte 2 -->
+        <h3 class="text-center">II-ENDEREÇO, FAMÍLIA e OUTRAS INFORMAÇÕES </h3>
+
+
+        <div class="px-5 col-md-6">
+          <input type="button" class="btn btn-danger" onclick="history.back()" value="Cancelar">
+        </div>
+        <div class="px-5 col-md-6">
           <button type="submit" class="btn btn-danger">Confirmar</button>
         </div>
+        
       </form>
     </main>
   </div>
