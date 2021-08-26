@@ -98,11 +98,11 @@
           <div class="col-md-3">
             <legend class="col-form-label col-12 pt-0">Usa medicação?</legend>
             <div class="col-12">
-              <div class="form-check form-check">
+              <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="remedio" id="tem_medicação" value="sim">
                 <label class="form-check-label" for="tem_medicação">Sim</label>
               </div>
-              <div class="form-check form-check">
+              <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="remedio" id="nao_tem_medicação"value="nao">
                 <label class="form-check-label" for="nao_tem_medicação">Não</label>
               </div>
@@ -155,7 +155,17 @@
         <div class="px-5 col-md-6">
           <button type="submit" class="btn btn-danger">Confirmar</button>
         </div>
-        
+
+        <div class="d-flex flex-md-row bd-highlight mb-3">
+          <input type="button" class="btn btn-danger" onclick="history.back()" value="Cancelar">
+          <button type="submit" class="btn btn-danger">Confirmar</button>
+        </div>
+
+        <div class="btn-group w-25 mx-auto" role="group" aria-label="Basic example">
+          <button type="submit" class="btn btn-outline-danger">Confirmar</button>
+          <input type="button" class="btn btn-outline-danger" onclick="history.back()" value="Cancelar">
+        </div>
+
       </form>
     </main>
   </div>
