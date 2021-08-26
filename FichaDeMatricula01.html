@@ -98,11 +98,11 @@
           <div class="col-md-3">
             <legend class="col-form-label col-12 pt-0">Usa medicação?</legend>
             <div class="col-12">
-              <div class="form-check form-check-inline">
+              <div class="form-check form-check">
                 <input class="form-check-input" type="radio" name="remedio" id="tem_medicação" value="sim">
                 <label class="form-check-label" for="tem_medicação">Sim</label>
               </div>
-              <div class="form-check form-check-inline">
+              <div class="form-check form-check">
                 <input class="form-check-input" type="radio" name="remedio" id="nao_tem_medicação"value="nao">
                 <label class="form-check-label" for="nao_tem_medicação">Não</label>
               </div>
@@ -115,6 +115,32 @@
           </div>
 
         </fieldset>
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-12 pt-0">Médico</legend>
+          
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="medico" id="tem_doenca_cronica" value="neurol/neuroped">
+              <label class="form-check-label" for="neurol">Neurol./Neuroped.</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="medico" id="psiquiatra"value="psiquiatra">
+              <label class="form-check-label" for="psiquiatra">Psquiatra</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="col-md-12 pt-0">
+          <label for="outros_serviços" class="form-label">Frquenta serviços fora da AMA?</label>
+          <input type="text" class="form-control" id="outros_serviços">
+        </div>
+
+        <div class="col-md-12 pt-0">
+          <label for="restricao_alimentar" class="form-label">Possui restrição alimentar?</label>
+          <input type="text" class="form-control" id="restricao_alimentar">
+        </div>
 
         <!-- Parte 2 -->
         <h3 class="text-center">II-ENDEREÇO, FAMÍLIA e OUTRAS INFORMAÇÕES </h3>
