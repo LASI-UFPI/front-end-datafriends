@@ -17,7 +17,7 @@
       <img src="ama.png" class="rounded-0" alt="Logo da AMA">
       <h1>Ficha de Matrícula</h1>
     </header>
-    
+
     <main>
       <form class="py-5 px-5 row g-3" action="" method="post">
         <h3 class="text-center">I-IDENTIFICAÇÃO DO(A) ATENDIDO(A) DIAGNÓSTICOS </h3>
@@ -44,11 +44,10 @@
 
         <div class="col-md-4">
           <label for="sexo" class="form-label">Sexo</label>
-          <select id="sexo" class="form-control">
-            <option selected>Selecionar</option>
+          <select id="sexo" class="form-select">
+            <option selected>Selecionar...</option>
             <option>Masculino</option>
             <option>Feminino</option>
-            <option>Outro</option>
           </select>
         </div>
 
@@ -79,13 +78,13 @@
 
         <fieldset class="row mb-3">
           <legend class="col-form-label col-12 pt-3">Possui alguma doença crônica não transmissível?</legend>
-          
+
           <div class="col-12">
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="doenca_cronica" id="tem_doenca_cronica" value="sim">
               <label class="form-check-label" for="tem_doenca_cronica">Sim</label>
             </div>
-            
+
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="doenca_cronica" id="nao_tem_doenca_cronica"
                 value="nao">
@@ -103,7 +102,7 @@
                 <label class="form-check-label" for="tem_medicação">Sim</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="remedio" id="nao_tem_medicação"value="nao">
+                <input class="form-check-input" type="radio" name="remedio" id="nao_tem_medicação" value="nao">
                 <label class="form-check-label" for="nao_tem_medicação">Não</label>
               </div>
             </div>
@@ -118,15 +117,16 @@
 
         <fieldset class="row mb-3">
           <legend class="col-form-label col-12 pt-0">Médico</legend>
-          
+
           <div class="col-12">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="medico" id="tem_doenca_cronica" value="neurol/neuroped">
+              <input class="form-check-input" type="radio" name="medico" id="neurol"
+                value="neurol/neuroped">
               <label class="form-check-label" for="neurol">Neurol./Neuroped.</label>
             </div>
-            
+
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="medico" id="psiquiatra"value="psiquiatra">
+              <input class="form-check-input" type="radio" name="medico" id="psiquiatra" value="psiquiatra">
               <label class="form-check-label" for="psiquiatra">Psquiatra</label>
             </div>
           </div>
@@ -143,27 +143,88 @@
         </div>
 
         <!-- Parte 2 -->
-        <h3 class="text-center">II-ENDEREÇO, FAMÍLIA e OUTRAS INFORMAÇÕES </h3>
+        <h3 class="text-center pt-5">II-ENDEREÇO, FAMÍLIA e OUTRAS INFORMAÇÕES </h3>
+         
+        <div class="col-md-4">
+          <label for="Zona" class="form-label">Zonas</label>
+          <select id="Zona" class="form-select">
+            <option selected>Selecionar...</option>
+            <option>?</option>
+            <option>?</option>
+            <option>?</option>
+            <option>?</option>
+          </select>
+        </div>
 
+        <div class="col-md-4">
+          <label for="bairro" class="form-label">Bairro</label>
+          <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro">
+        </div>
+
+        <div class="col-md-4">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="cidade" placeholder="Digite a cidade">
+        </div>
         
+        <div class="col-md-9">
+          <label for="endereço" class="form-label">Endereço Residencial</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Digite o endereço">
+        </div>
+
+        <div class="col-md-3">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+        </div>
+
+        <div class="col-md-9">
+          <label for="responsavel" class="form-label">Principal responsável</label>
+          <input type="text" class="form-control" id="responsavel" placeholder="Digite o nome do responsável">
+        </div>
+
+        <div class="col-md-3">
+          <label for="idade" class="form-label">Idade</label>
+          <input type="text" class="form-control" id="idade" placeholder="Idade do responsável">
+        </div>
+
+        <div class="col-md-5">
+          <label for="transporte" class="form-label">Meio de transporte para chegar a instituição</label>
+          <select id="transporte" class="form-select">
+            <option selected>Selecionar...</option>
+            <option>Carro</option>
+            <option>Ônibus</option>
+            <option>a pé</option>
+            <option>bicicleta</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="contato" class="form-label">Telefone de Contato</label>
+          <input type="text" class="form-control" id="contato">
+        </div>
+         
+        <div class="col-md-3">
+          <label for="parentesco" class="form-label">Grau de Parentesco</label>
+          <input type="text" class="form-control" id="parentesco">
+        </div>
+
+        <div class="col-md-6">
+          <label for="escolaridade" class="form-label">Escolaridade</label>
+          <input type="text" class="form-control" id="escolaridade">
+        </div>
+
+        <div class="col-md-3">
+          <label for="ocupação" class="form-label">Ocupação</label>
+          <input type="text" class="form-control" id="ocupação" class="form-label">
+        </div>
+
         <!-- Parte 3 -->
-        <h3 class="text-center">III-DADOS DA ESCOLA REGULAR  </h3>
-
-        <div class="px-5 col-md-6">
-          <input type="button" class="btn btn-danger" onclick="history.back()" value="Cancelar">
-        </div>
-        <div class="px-5 col-md-6">
+        <h3 class="text-center pt-5">III-DADOS DA ESCOLA REGULAR </h3>
+        
+        <!-- Teste Botões -->
+       
+        <div class="d-flex flex-md-row bd-highlight mb-3 justify-content-center">
           <button type="submit" class="btn btn-danger">Confirmar</button>
-        </div>
-
-        <div class="d-flex flex-md-row bd-highlight mb-3">
-          <input type="button" class="btn btn-danger" onclick="history.back()" value="Cancelar">
-          <button type="submit" class="btn btn-danger">Confirmar</button>
-        </div>
-
-        <div class="btn-group w-25 mx-auto" role="group" aria-label="Basic example">
-          <button type="submit" class="btn btn-outline-danger">Confirmar</button>
-          <input type="button" class="btn btn-outline-danger" onclick="history.back()" value="Cancelar">
+          <input type="button" class="btn btn-outline-danger mx-3" onclick="history.back()" value="Cancelar">
         </div>
 
       </form>
