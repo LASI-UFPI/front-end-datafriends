@@ -1,0 +1,28 @@
+
+:root{
+    --amarelo-principal: #f8e71d;
+    --roxo-principal: #311c69;
+     }
+     
+    body {
+       background: var(--roxo-principal);
+     }
+     
+     header{
+       
+       width: 100%;
+       height: 200px;
+       background: #f8e71d;
+     }
+     header h1 {
+       color: var(--roxo-principal);
+     }
+     header img {
+       height: 122px;
+     }
+      .principal {
+       width: 70%;
+       height: max-content;
+       background: #ffef65;
+     }
+     

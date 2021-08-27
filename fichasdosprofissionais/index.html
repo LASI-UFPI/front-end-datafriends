@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilofichaprofissionais.css">
+  <title>Ficha dos profissionais</title>
+</head>
+
+<body>
+  <div class="principal h-100 mx-auto">
+    <header class="py-5 px-5 d-flex justify-content-center align-items-center">
+      <img src="logoama.png" class="rounded-0" alt="Logo da AMA">
+      <h1>Ficha de dados de cadastro dos profissionais da AMA-PI</h1>
+    </header>
+    
+    <main>
+
+      <form class="py-4 px-4 row g-3" action="" method="post">
+
+     <!--Primeira parte: indentificação gerais sobre os funcionários-->
+
+        <h3 class="text-center">Identificação</h3>
+
+        <div class="col-md-8">
+          <label for="nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="nome" placeholder="Digite o nome do profissional">
+        </div>
+
+        <div class="col-md-4">
+          <label for="nascimento" class="form-label">Data de Nascimento</label>
+          <input type="date" class="form-control" id="nascimento">
+        </div>
+
+        <div class="col-md-8">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Digite o Email">
+        </div>
+
+        <div class="col-md-4">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF">
+        </div>
+
+        <div class="col-md-4">
+          <label for="rg" class="form-label">RG</label>
+          <input type="text" class="form-control" id="rg" placeholder="Digite o RG">
+        </div>
+
+        <div class="col-md-4">
+          <label for="orgão_expeditor" class="form-label">Orgão expeditor</label>
+          <input type="text" class="form-control" id="orgao_expeditor" placeholder="Digite o orgão expeditor">
+      </div>
+
+
+        <div class="col-md-4">
+            <label for="data_expedição" class="form-label">Data de expedição (RG)</label>
+            <input type="date" class="form-control" id="data_expedicao">
+        </div>
+<!---Parte do endereço do profissional/ colocar uma consulta ao cep -->
+     
+         <div class="col-md-6">
+            <label for="cep" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+        </div>
+
+        <div class="col-md-6">
+            <label for="rua" class="form-label">Rua (Longradouro)</label>
+            <input type="text" class="form-control" id="logradouro" placeholder="Digite a rua ">
+          </div>
+          <div class="col-md-6">
+            <label for="bairro" class="form-label">Bairro</label>
+            <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro">
+          </div>
+          <div class="col-md-6">
+            <label for="cidade" class="form-label">Cidade (Localidade)</label>
+            <input type="text" class="form-control" id="localidade" placeholder="Digite a cidade">
+          </div>
+
+         
+        <!--Segunda parte do cadastro: Situação profissional -->
+
+        <h3 class="text-center">Situação profissional </h3>
+  
+          <div class="col-md-6">
+            <label for="convenio" class="form-label">Convênio</label>
+            <input type="text" class="form-control" id="convenio" placeholder="Digite o convênio do profissional">
+          </div>
+
+          <div class="col-md-6">
+            <label for="data_inscrição" class="form-label">Data de inscrição</label>
+            <input type="date" class="form-control" id="data_inscrição">
+          </div>
+
+          <div class="col-md-6">
+            <label for="registro_profissional" class="form-label">Número do registro profissional</label>
+            <input type="text" class="form-control" id="registro_profissional" placeholder="Digite o número de registro do profissional">
+          </div>
+
+          <div class="col-md-6">
+            <label for="funcao" class="form-label">Função </label>
+            <input type="text" class="form-control" id="funcao" placeholder="Digite a função do profissional">
+          </div>
+        
+          <fieldset class="row mb-3">
+
+            <div class="col-md-12">
+              <legend class="col-form-label col-12 pt-0">Tipo de vínculo</legend>
+    
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="vinculo" id="estatutario" value="estatutario">
+                <label class="form-check-label" for="inlineRadio1">Estatutário</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="vinculo" id="voluntario" value="voluntario">
+              <label class="form-check-label" for="inlineRadio2">Volúntário</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="vinculo" id="coletista_estado" value="coletista_estado">
+              <label class="form-check-label" for="inlineRadio3">Coletista Estado </label>
+            </div>
+
+           <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="vinculo" id="contratado" value="contratado">
+            <label class="form-check-label" for="inlineRadio4">Contratado</label>
+           </div>
+          </div>
+          </fieldset>
+
+          <!--Aréa para a formação do profissional-->
+          <div class="col-md-6">
+            <label for="formacao_academica" class="form-label">Formação acadêmica</label>
+            <input type="text" class="form-control" id="Formacao-academica" placeholder="Digite a formação acadêmica">
+          </div>
+
+          <div class="col-md-6">
+            <label for="pos_graduacao" class="form-label">Pós graduação</label>
+            <input type="text" class="form-control" id="pos-graduacao" placeholder="Digite a pós graduação">
+          </div>
+
+        
+      
+        <!--Terceira parte da parte do cadastro dos profissionais: Observações  -->
+        
+        <h3 class="text-center">Observações</h3>
+
+        <div class="col-md-12 text-center ">
+          <label for="atividades_profissionais">Outras atividades profissionais</label> 
+          <textarea class="form-control" id="atividades_profissionais" placeholder="Digite outras atividades profissionais" required></textarea>
+          </div> 
+      
+
+          
+            <div class="col-md-12 text-center ">
+  
+          <button type="submit" id="confirmar" class="btn btn-danger" Style="width: 100px;" >Confirmar</button>
+          <input type="button" id="cancelar" class="btn btn-danger"  style="width: 100px;"  onclick="history.back()" value="Cancelar">
+
+            </div>
+          
+       
+
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+
+  </body>
+</div>
+</html> 
