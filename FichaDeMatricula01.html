@@ -31,17 +31,17 @@
           <label for="Ingresso_ama" class="form-label">Ingresso na AMA</label>
           <input type="date" class="form-control" id="ingresso_ama">
         </div>
-
+        <!-- Bloco para a data de nascimento -->
         <div class="col-md-4">
           <label for="nascimento" class="form-label">Data de Nascimento</label>
           <input type="date" class="form-control" id="nascimento">
         </div>
-
+        <!-- Bloco para a idade -->
         <div class="col-md-4">
           <label for="Idade" class="form-label">Idade</label>
           <input type="text" class="form-control" id="Idade" placeholder="Digite a Idade">
         </div>
-
+        <!-- Bloco para o sexo -->
         <div class="col-md-4">
           <label for="sexo" class="form-label">Sexo</label>
           <select id="sexo" class="form-select">
@@ -50,51 +50,40 @@
             <option>Feminino</option>
           </select>
         </div>
-
+        <!-- Bloco para o cpf -->
         <div class="col-md-4">
           <label for="cpf" class="form-label">CPF</label>
           <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF">
         </div>
-
+        <!-- Bloco para o rg -->
         <div class="col-md-4">
           <label for="rg" class="form-label">RG</label>
           <input type="text" class="form-control" id="rg" placeholder="Digite o RG">
         </div>
-
+        <!-- Bloco para o Nº do sus -->
         <div class="col-md-4">
           <label for="sus" class="form-label">Número do SUS</label>
           <input type="text" class="form-control" id="sus" placeholder="Digite o Numero do SUS">
         </div>
-
-        <div class="col-md-6">
+        <!-- Bloco para o CID -->
+        <div class="col-md-3">
           <label for="cid" class="form-label">CID</label>
           <input type="text" class="form-control" id="cid" placeholder="Digite o CID">
         </div>
-
-        <div class="col-md-6">
+        <!-- Bloco para a data do último diagnóstico -->
+        <div class="col-md-3">
           <label for="ultimo_diagnostico" class="form-label">Último Diagnóstico</label>
           <input type="date" class="form-control" id="ultimo_diagnostico" class="form-label">
         </div>
-
+        <!-- Bloco para a doença crônica -->
+        <div class="col-md-6">
+          <label for="doenca_cronica" class="form-label">Possui alguma doença crônica não transmissível?</label>
+          <input type="text" class="form-control" id="doenca_cronica" class="form-label">
+        </div>
+        <!-- Bloco para a medicação -->
         <fieldset class="row mb-3">
-          <legend class="col-form-label col-12 pt-3">Possui alguma doença crônica não transmissível?</legend>
-
-          <div class="col-12">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="doenca_cronica" id="tem_doenca_cronica" value="sim">
-              <label class="form-check-label" for="tem_doenca_cronica">Sim</label>
-            </div>
-
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="doenca_cronica" id="nao_tem_doenca_cronica"
-                value="nao">
-              <label class="form-check-label" for="nao_tem_doenca_cronica">Não</label>
-            </div>
-          </div>
-        </fieldset>
-
-        <fieldset class="row mb-3">
-          <div class="col-md-3">
+          <!-- Perguntar se usa medicação -->
+          <div class="col-md-3 mt-3">
             <legend class="col-form-label col-12 pt-0">Usa medicação?</legend>
             <div class="col-12">
               <div class="form-check form-check-inline">
@@ -107,21 +96,18 @@
               </div>
             </div>
           </div>
-
-          <div class="col-md-9">
+          <!-- Perguntar qual -->
+          <div class="col-md-9 mt-3">
             <label for="qual" class="form-label">Qual(is)?</label>
             <input type="text" class="form-control" id="qual">
           </div>
-
         </fieldset>
-
+        <!-- Bloco para o tipo de médico -->
         <fieldset class="row mb-3">
           <legend class="col-form-label col-12 pt-0">Médico</legend>
-
           <div class="col-12">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="medico" id="neurol"
-                value="neurol/neuroped">
+              <input class="form-check-input" type="radio" name="medico" id="neurol" value="neurol/neuroped">
               <label class="form-check-label" for="neurol">Neurol./Neuroped.</label>
             </div>
 
@@ -131,12 +117,12 @@
             </div>
           </div>
         </fieldset>
-
+        <!-- Bloco para outros serviços -->
         <div class="col-md-12 pt-0">
           <label for="outros_serviços" class="form-label">Frquenta serviços fora da AMA?</label>
           <input type="text" class="form-control" id="outros_serviços">
         </div>
-
+        <!-- Bloco para a restição alimentar -->
         <div class="col-md-12 pt-0">
           <label for="restricao_alimentar" class="form-label">Possui restrição alimentar?</label>
           <input type="text" class="form-control" id="restricao_alimentar">
@@ -144,7 +130,7 @@
 
         <!-- Parte 2 -->
         <h3 class="text-center pt-5">II-ENDEREÇO, FAMÍLIA e OUTRAS INFORMAÇÕES </h3>
-         
+        <!-- Bloco para as zonas -->
         <div class="col-md-4">
           <label for="Zona" class="form-label">Zonas</label>
           <select id="Zona" class="form-select">
@@ -155,37 +141,37 @@
             <option>?</option>
           </select>
         </div>
-
+        <!-- Bloco para o bairro -->
         <div class="col-md-4">
           <label for="bairro" class="form-label">Bairro</label>
           <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro">
         </div>
-
+        <!-- Bloco para a cidade -->
         <div class="col-md-4">
           <label for="cidade" class="form-label">Cidade</label>
           <input type="text" class="form-control" id="cidade" placeholder="Digite a cidade">
         </div>
-        
+        <!-- Bloco para o endereço -->
         <div class="col-md-9">
           <label for="endereço" class="form-label">Endereço Residencial</label>
           <input type="text" class="form-control" id="inputAddress" placeholder="Digite o endereço">
         </div>
-
+        <!-- Bloco para o cep -->
         <div class="col-md-3">
           <label for="cep" class="form-label">CEP</label>
           <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
         </div>
-
+        <!-- Bloco para responsável principal-->
         <div class="col-md-9">
           <label for="responsavel" class="form-label">Principal responsável</label>
           <input type="text" class="form-control" id="responsavel" placeholder="Digite o nome do responsável">
         </div>
-
+        <!-- Bloco para a idade do responsável -->
         <div class="col-md-3">
           <label for="idade" class="form-label">Idade</label>
           <input type="text" class="form-control" id="idade" placeholder="Idade do responsável">
         </div>
-
+        <!-- Bloco para o meio de transporte -->
         <div class="col-md-5">
           <label for="transporte" class="form-label">Meio de transporte para chegar a instituição</label>
           <select id="transporte" class="form-select">
@@ -196,32 +182,91 @@
             <option>bicicleta</option>
           </select>
         </div>
-
+        <!-- Bloco para o telefone de contato -->
         <div class="col-md-4">
           <label for="contato" class="form-label">Telefone de Contato</label>
           <input type="text" class="form-control" id="contato">
         </div>
-         
+        <!-- Bloco para o grau de parentesco -->
         <div class="col-md-3">
           <label for="parentesco" class="form-label">Grau de Parentesco</label>
           <input type="text" class="form-control" id="parentesco">
         </div>
-
+        <!-- Bloco para a escolaridade -->
         <div class="col-md-6">
           <label for="escolaridade" class="form-label">Escolaridade</label>
-          <input type="text" class="form-control" id="escolaridade">
+          <input type="text" class="form-control" id="escolaridade" placeholder="Escolaridade do responsável">
         </div>
-
-        <div class="col-md-3">
+        <!-- Bloco para a ocupação do responsável -->
+        <div class="col-md-6">
           <label for="ocupação" class="form-label">Ocupação</label>
-          <input type="text" class="form-control" id="ocupação" class="form-label">
+          <input type="text" class="form-control" id="ocupação" class="form-label"
+            placeholder="Ocupação do responsável">
+        </div>
+        <!-- Bloco para o cpf do responsável -->
+        <div class="col-md-3">
+          <label for="cpf_responsavel" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf_responsavel" class="form-label"
+            placeholder="CPF do responsável">
+        </div>
+        <!-- Bloco para o rg do responsável -->
+        <div class="col-md-3">
+          <label for="rg_responsavel" class="form-label">RG</label>
+          <input type="text" class="form-control" id="rg_responsavel" class="form-label"
+            placeholder="RG do responsável">
+        </div>
+        <!-- Bloco para a doença crônica do responsável-->
+        <div class="col-md-6">
+          <label for="doenca_cronica_responsavel" class="form-label">Possui doença crônica não transmissível?</label>
+          <input type="text" class="form-control" id="doenca_cronica_responsavel" class="form-label">
         </div>
 
+        <!-- Bloco para o outro responsável-->
+        <div class="col-md-6">
+          <label for="doenca_cronica_responsavel" class="form-label">Outro responsável</label>
+          <input type="text" class="form-control" id="doenca_cronica_responsavel" class="form-label">
+        </div>
+
+        <!-- Bloco para outro telefone de contato -->
+        <div class="col-md-6">
+          <label for="outro_contato" class="form-label">Telefone de Contato</label>
+          <input type="text" class="form-control" id="outro_contato">
+        </div>
+
+        <!-- Bloco para a constituição familiar -->
+        <div class="col-12">
+          <label for="familia" class="form-label">Constituição familiar</label>
+          <input type="text" class="form-control" id="familia">
+        </div>
+
+        <!-- Bloco para a religião -->
+        <fieldset class="row mb-3">
+          <!-- Perguntar se segue alguma religião -->
+          <div class="col-md-3 mt-3">
+            <legend class="col-form-label col-12 pt-0">Segue alguma religião?</legend>
+            <div class="col-12">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="religiao" id="tem_religiao" value="sim">
+                <label class="form-check-label" for="tem_religiao">Sim</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="religiao" id="nao_tem_religiao" value="nao">
+                <label class="form-check-label" for="nao_tem_religiao">Não</label>
+              </div>
+            </div>
+          </div>
+          <!-- Perguntar qual -->
+          <div class="col-md-9 mt-3">
+            <label for="qual" class="form-label">Qual?</label>
+            <input type="text" class="form-control" id="qual">
+          </div>
+        </fieldset>
+        
         <!-- Parte 3 -->
         <h3 class="text-center pt-5">III-DADOS DA ESCOLA REGULAR </h3>
-        
+
         <!-- Teste Botões -->
-       
+
         <div class="d-flex flex-md-row bd-highlight mb-3 justify-content-center">
           <button type="submit" class="btn btn-danger">Confirmar</button>
           <input type="button" class="btn btn-outline-danger mx-3" onclick="history.back()" value="Cancelar">
