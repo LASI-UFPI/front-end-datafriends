@@ -28,7 +28,7 @@
         </div>
         <!-- Bloco para o Ingresso na AMA -->
         <div class="col-md-6">
-          <label for="Ingresso_ama" class="form-label">Ingresso na AMA</label>
+          <label for="ingresso_ama" class="form-label">Ingresso na AMA</label>
           <input type="date" class="form-control" id="ingresso_ama">
         </div>
         <!-- Bloco para a data de nascimento -->
@@ -154,7 +154,7 @@
         <!-- Bloco para o endereço -->
         <div class="col-md-9">
           <label for="endereço" class="form-label">Endereço Residencial</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Digite o endereço">
+          <input type="text" class="form-control" id="endereço" placeholder="Digite o endereço">
         </div>
         <!-- Bloco para o cep -->
         <div class="col-md-3">
@@ -223,8 +223,8 @@
 
         <!-- Bloco para o outro responsável-->
         <div class="col-md-6">
-          <label for="doenca_cronica_responsavel" class="form-label">Outro responsável</label>
-          <input type="text" class="form-control" id="doenca_cronica_responsavel" class="form-label">
+          <label for="outro_responsavel" class="form-label">Outro responsável</label>
+          <input type="text" class="form-control" id="outro_responsavel" class="form-label">
         </div>
 
         <!-- Bloco para outro telefone de contato -->
@@ -240,7 +240,7 @@
         </div>
 
         <!-- Bloco para a religião -->
-        <fieldset class="row mb-3">
+        <fieldset class="row mb-3 pe-1">
           <!-- Perguntar se segue alguma religião -->
           <div class="col-md-3 mt-3">
             <legend class="col-form-label col-12 pt-0">Segue alguma religião?</legend>
@@ -257,8 +257,8 @@
           </div>
           <!-- Perguntar qual -->
           <div class="col-md-9 mt-3">
-            <label for="qual" class="form-label">Qual?</label>
-            <input type="text" class="form-control" id="qual">
+            <label for="qual_religiao" class="form-label">Qual?</label>
+            <input type="text" class="form-control" id="qual_religiao">
           </div>
         </fieldset>
         
@@ -266,7 +266,7 @@
         <h3 class="text-center pt-5">III-DADOS DA ESCOLA REGULAR </h3>
 
         <!-- Teste Botões -->
-
+        <!-- d-flex flex-md-row bd-highlight mb-3 justify-content-center -->
         <div class="d-flex flex-md-row bd-highlight mb-3 justify-content-center">
           <button type="submit" class="btn btn-danger">Confirmar</button>
           <input type="button" class="btn btn-outline-danger mx-3" onclick="history.back()" value="Cancelar">
