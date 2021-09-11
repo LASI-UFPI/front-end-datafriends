@@ -13,17 +13,17 @@ window.onload = function(){
                 <input type="text" class="form-control" id="enderEscola" placeholder="Digite o endereço da escola">
             </div>
             <!-- Telefone Escola -->
-            <div class="col-md-2 mt-3">
+            <div class="col-md-4 mt-3">
                 <label for="telEscola" class="form-label">Telefone da Escola</label>
                 <input type="text" class="form-control" id="telEscola" placeholder="">
             </div>
             <!-- Diretor escola -->
-            <div class="col-md-3 mt-3">
+            <div class="col-md-4 mt-3">
                 <label for="dirEscola" class="form-label">Diretor(a)</label>
                 <input type="text" class="form-control" id="dirEscola" placeholder="">
             </div>
             <!-- Tempo escola -->
-            <div class="col-md-3 mt-3">
+            <div class="col-md-4 mt-3">
                 <label for="tempoEscola" class="form-label">Há quanto tempo estuda na escola?</label>
                 <input type="text" class="form-control" id="tempoEscola">
             </div>
