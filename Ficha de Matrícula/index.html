@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="EstiloFichaDeMatricula01.css">
+  <script src="JSFichaMatricula.js"></script>
   <title>Ficha de Matrícula</title>
 </head>
 
@@ -262,8 +263,27 @@
           </div>
         </fieldset>
         
-        <!-- Parte 3 -->
+
+
+        <!-- Parte 3 - UTILIZA JS-->
         <h3 class="text-center pt-5">III-DADOS DA ESCOLA REGULAR </h3>
+        <!-- Caixa Frequenta Escola -->
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" onclick="escola()" type="checkbox" value="nFreqEscola" name="freqEscola" id="nFreqEscola">
+          <label class="form-check-label" for="naoFreqEscola"><b>Não frequenta a escola</b></label>
+        </div>
+
+        <!-- Dados escola - ESTA DIV NÃO PODE SER DELETADA -->
+        <div id="dadosEscola">
+
+        </div>
+
+        <!-- Motivo Escola  ESTA DIV NÃO PODE SER DELETADA -->
+        <div id="motivoEscola">
+
+        </div>
+
+
 
         <!-- Teste Botões -->
         <!-- d-flex flex-md-row bd-highlight mb-3 justify-content-center -->
