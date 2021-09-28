@@ -1,0 +1,18 @@
+:root{
+  --roxo-principal: #311c69;
+}
+
+body {
+  background: var(--roxo-principal);
+}
+
+main {
+  height: 700px;
+  width: 600px;
+  background: #F8E71D;
+  border-radius: 30px;
+}
+
+h1 {
+  color: var(--roxo-principal);
+}

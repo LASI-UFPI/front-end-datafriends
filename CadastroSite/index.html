@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="EstiloCadastroSite.css">
+  <title>Cadastro no site</title>
+</head>
+
+<body>
+ 
+  <main class="h-auto w-50 position-absolute top-50 start-50 translate-middle p-3">
+    <h1 class="pe-5 text-end">Cadastro</h1>
+    <div class="py-4 d-flex justify-content-center align-items-center">
+      <!-- adicionar link na imagem -->
+      <img src="logoama.png" class="rounded-0 pb-5" alt="Logo da AMA">
+      
+      <form class="row g-3">
+        
+        <div class="col-12">
+          <label for="username" class="form-label">Nome do Usuário</label>
+          <input type="text" class="form-control" id="username">
+        </div>
+
+        <div class="col-12">
+          <label for="inputEmail" class="form-label">Email (opcional)</label>
+          <input type="email" class="form-control" id="inputEmail">
+        </div>
+
+        <div class="col-12">
+          <label for="Senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="Senha">
+        </div>
+        <!-- Lembrar de conferir a senha -->
+        <div class="col-12">
+          <label for="SenhaNov" class="form-label">Senha novamente</label>
+          <input type="password" class="form-control" id="SenhaNov">
+        </div>
+
+        <div class="d-flex flex-md-row bd-highlight mb-3 justify-content-center">
+          <button type="submit" class="btn btn-danger">Confirmar</button>
+          <!-- Falta alterar para "Entrar" -->
+          <input type="button" class="btn btn-outline-danger mx-3" onclick="history.back()" value="Cancelar">
+        </div>
+
+      </form>
+  </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
