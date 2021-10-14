@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -8,19 +8,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="EstiloCadastroSite.css">
-  <script src="JSCadastroSite.js"></script>
   <title>Cadastro no site</title>
 </head>
 
 <body>
- 
-  <main class="h-auto w-50 position-absolute top-50 start-50 translate-middle p-3">
+  <!-- h-auto w-50 position-absolute top-50 start-50 translate-middle p-3 -->
+  <main class="mt-5">
     <h1 class="pe-5 text-end">Cadastro</h1>
     <div class="py-4 d-flex justify-content-center align-items-center">
       <!-- Substituir o link pelo da PÁGINA INICIAL -->
       <a href="https://ge.globo.com"><img src="logoama.png" class="rounded-0 pb-5" alt="Logo da AMA"></a>
       
-      <form class="row g-3">
+      <form class="row g-3 ">
         
         <div class="col-12">
           <label for="username" class="form-label">Nome do Usuário</label>
@@ -33,17 +32,17 @@
         </div>
 
         <div class="col-12">
-          <label for="Senha" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="Senha">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="senha">
         </div>
         <!-- Lembrar de conferir a senha -->
         <div class="col-12">
-          <label for="SenhaNov" class="form-label">Senha novamente</label>
-          <input type="password" class="form-control" id="SenhaNov">
+          <label for="senhaC" class="form-label">Confirmar senha</label>
+          <input type="password" class="form-control" id="senhaC">
         </div>
         
         <div class="d-flex flex-md-row bd-highlight mb-3 justify-content-center">
-          <button type="submit" class="btn btn-danger" onclick="validatePassword()">Confirmar</button>
+          <button type="submit" class="btn btn-danger" onclick="return validarSenha()">Confirmar</button>
           <!-- Substituir o link pelo da PÁGINA DE LOGIN -->
           <a class="btn btn-outline-danger mx-3" href="https://www.shopvasco.com.br" role="button">Página de login</a>
         </div>
@@ -55,6 +54,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
+  <script src="JSCadastroSite.js"></script>
 </body>
 
 </html>

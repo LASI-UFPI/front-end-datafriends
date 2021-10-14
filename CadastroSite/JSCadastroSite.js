@@ -1,14 +1,16 @@
-let Senha = document.getElementById("Senha")
-let SenhaNov = document.getElementById("SenhaNov");
+let senha = document.getElementById('senha');
+let senhaC = document.getElementById('senhaC');
 
-function validatePassword(){
-
-  if(Senha.value != SenhaNov.value) {
-    SenhaNov.setCustomValidity("Senhas diferentes!");
-    SenhaNov.reportValidity();
+function validarSenha() {
+  if (senha.value != senhaC.value) {
+    senhaC.setCustomValidity("Senhas diferentes!");
+    senhaC.reportValidity();
     return false;
   } else {
-    SenhaNov.setCustomValidity(' ');
+    senhaC.setCustomValidity("");
     return true;
   }
 }
+
+// verificar também quando o campo for modificado, para que a mensagem suma quando as senhas forem iguais
+senhaC.addEventListener('input', validarSenha);
