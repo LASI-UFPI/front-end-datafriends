@@ -16,3 +16,20 @@ main {
 h1 {
   color: var(--roxo-principal);
 }
+
+@media screen and (max-width: 800px) {
+  
+  main {
+    background: var(--roxo-principal);
+    color: aliceblue;
+    width: auto;
+  }
+  
+  h1 {
+    color: aliceblue;
+  }
+
+  .tenho-conta {
+    color: aliceblue;
+  }
+}
