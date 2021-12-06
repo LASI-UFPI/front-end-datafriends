@@ -1,0 +1,110 @@
+:root{
+  --roxo-principal: #311c69;
+}
+
+body {
+  background: var(--roxo-principal);
+}
+
+
+main {
+  margin-top: 12%;
+  width: 800px;
+  background: #F8E71D;
+  border-radius: 30px;
+  padding: 50px;
+  padding-left: 30px;
+  box-shadow:0 0 2em rgba(0, 0, 0, 0.418);
+}
+
+#usernameLogin, input:focus{
+  border-radius: 15px;
+  box-shadow: 0 0 0 0;
+  border: 0;
+  outline: 0;
+}
+
+#iconEye{
+  width:auto;
+  height: 20px;;
+}
+
+#btpasswordLogin, input:focus{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 0 0;
+  border: 0;
+  outline: 0;
+}
+
+#passwordLogin, input:focus{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 0 0 0;
+  border: 0;
+  outline: 0;
+}
+
+.cad{
+  font-size: 1.3rem;
+  margin-top:10px;
+}
+
+h1 {
+  font-weight:bold;
+  color: var(--roxo-principal);
+}
+
+.h5{
+  color: var(--roxo-principal);
+}
+
+.btn-link{
+  font-size: 1.1rem;
+  margin-top:6px;
+  text-decoration:none;
+  color: rgba(255, 0, 0, 0.747);
+}
+
+.btn-danger {
+  margin-top:30px;
+  width:160px;
+  font-size: 1.3rem;
+  border-radius: 30px;
+}
+
+.linha{
+  margin-top: 10px;
+  margin-bottom:30px;
+  border: 1px solid var(--roxo-principal);
+}
+
+
+@media screen and (max-width: 800px) {
+  
+  .img{
+    width:60%;
+  }
+  main {
+    background: var(--roxo-principal);
+    color: aliceblue;
+    width: auto;
+    box-shadow:0 0 0em rgba(0, 0, 0, 0);
+  }
+  
+  .btn-link{
+    color: aliceblue;
+  }
+
+  .h5{
+    color: aliceblue;
+  }
+
+  h1 {
+    margin-top: 20px;
+    color: aliceblue;
+  }
+
+}
+
