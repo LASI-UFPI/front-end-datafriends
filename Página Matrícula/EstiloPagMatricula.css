@@ -1,0 +1,54 @@
+:root{
+  --roxo-principal: #311c69;
+}
+
+body {
+  background: var(--roxo-principal);
+  
+  
+}
+
+.ama-img {
+  width: 10%;
+  height: auto;
+}
+
+.navbar {  
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+  background: #F8E71D;
+  padding: 10px;
+}
+
+.container{
+
+  width: 100%;
+ 
+}
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50.00%;
+  padding: 50px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+h1 {
+  color: var(--roxo-principal);
+}
+
+h4 {
+  color: rgb(255, 255, 255);
+}
