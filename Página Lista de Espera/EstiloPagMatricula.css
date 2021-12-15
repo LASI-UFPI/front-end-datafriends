@@ -27,15 +27,6 @@ body {
  
 }
 
-
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 50.00%;
-  padding: 50px;
-}
-
 /* Clear floats after image containers */
 .row::after {
   content: "";
