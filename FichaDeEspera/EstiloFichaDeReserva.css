@@ -23,3 +23,26 @@ header img {
   background: #ffef65;
 }
 
+@media screen and (max-width: 800px) {
+  
+  .principal {
+    width: 100%;
+    background: #ffef65;
+  }
+
+  main {
+    background: var(--roxo-principal);
+    color: aliceblue;
+    width: auto;
+  }
+  
+  h1 {
+    color: aliceblue;
+  }
+
+  header img {
+    width: 20%;
+    height: auto;
+   }
+}
+
