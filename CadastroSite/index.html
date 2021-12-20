@@ -13,14 +13,9 @@
 </head>
 
 <body>
-  <!-- h-auto w-50 position-absolute top-50 start-50 translate-middle p-3 -->
+
   <main class="mt-4 py-4 mx-auto">
     <h1 class="text-center">Cadastro</h1>
-    <!-- py-4 d-flex justify-content-center align-items-center -->
-    <!-- Se for adicionar a imagem, descomentar div e img -->
-    <!-- <div class="py-4  justify-content-center align-items-center"> -->
-    
-      <!-- <img src="logoama.png" class="rounded-0 pb-5" alt="Logo da AMA"> -->
       
       <form class="row g-3 ">
         
@@ -38,6 +33,18 @@
           <label for="senha" class="form-label">Senha</label>
           <input type="password" class="form-control" id="senha" required>
         </div>
+
+        <div class="mt-3">
+          <label for="passwordLogin" class="h5 form-label">Senha</label>
+      </div>
+      
+      <div class="input-group mb-3">
+          <input type="password" class="form-control" id="passwordLogin">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="btpasswordLogin" onclick="mostrarSenha()"><img id="iconEye" alt="eye" src="eye.svg"></button>
+          </div>
+      </div>
+      
         <!-- Lembrar de conferir a senha -->
         <div class="col-12">
           <label for="senhaC" class="form-label">Confirmar senha</label>
