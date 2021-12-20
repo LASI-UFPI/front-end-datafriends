@@ -17,6 +17,66 @@ h1 {
   color: var(--roxo-principal);
 }
 
+label {
+  color: var(--roxo-principal);
+}
+
+.btn-danger {
+  width: 50%;
+  border-radius: 30px;
+}
+
+#username, input:focus{
+  border-radius: 15px;
+  box-shadow: 0 0 0 0;
+  border: 0;
+  outline: 0;
+}
+
+#inputEmail, input:focus{
+  border-radius: 15px;
+  box-shadow: 0 0 0 0;
+  border: 0;
+  outline: 0;
+}
+
+#iconEye{
+  width:auto;
+  height: 20px;;
+}
+
+#btpassword, input:focus{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 0 0;
+  border: 0;
+}
+
+#senha, input:focus{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 0 0 0;
+  border: 0;
+  outline: 0;
+}
+
+#btpasswordConfirm, input:focus{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 0 0;
+  border: 0;
+}
+
+#senhaC, input:focus{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 0 0 0;
+  border: 0;
+  outline: 0;
+}
+
 @media screen and (max-width: 800px) {
   
   main {
@@ -24,8 +84,14 @@ h1 {
     color: aliceblue;
     width: auto;
   }
-  
+  a{
+    color: aliceblue;
+  }
   h1 {
+    color: aliceblue;
+  }
+
+  label {
     color: aliceblue;
   }
 
