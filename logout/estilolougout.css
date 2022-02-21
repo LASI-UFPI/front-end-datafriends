@@ -1,0 +1,34 @@
+:root{
+  --roxo-principal: #311c69;
+}
+
+body {
+  background: var(--roxo-principal);
+}
+
+
+div {  
+  width: 25%;
+  height: auto;
+  background: #F8E71D;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+h2,p {
+  color: var(--roxo-principal);
+}
+
+@media screen and (max-width: 800px) {
+  
+  div {
+    background: var(--roxo-principal);
+    color: aliceblue;
+    width: 100%;
+  }
+
+  h2,p {
+    color: aliceblue;
+  }
+
+}
